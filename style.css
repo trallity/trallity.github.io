@@ -1,0 +1,130 @@
+* {
+    font-family: "Kurale";
+}
+
+body {
+    margin: 0 0;
+    background-color: #000000;
+    -webkit-font-smoothing: antialiased;
+    max-width: auto;
+}
+
+header {
+
+    background-image: url('images/studiobg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+#LOGO_animation {
+    z-index: -1;
+    position: absolute;
+    margin: 0 auto;
+    width: 1600px;
+    height: 300px;
+    background: linear-gradient(180deg, #FFFFFF, #0000FF, #FFFFFF, #0000FF, #FFFFFF, #0000FF, #FFFFFF);
+    background-size: 100% 500%;
+    animation: gradient2 5s linear infinite;
+}
+
+@keyframes gradient2 {
+    0% {
+        background-position: 0% 84%;
+    }
+
+     100% {
+        background-position: 100% 0%;
+    }
+}
+
+.logo {
+    position: absolute;
+    left: 355px;
+    top: 100px;
+}
+
+.desc {
+    z-index: 1;
+    position: relative;
+    font-family: serif;
+    color: white;
+    font-size: 60px;
+    border-top: solid 1px yellow;
+    border-bottom: solid 1px yellow;
+    top: 270px;
+    padding: 30px 0 45px;
+    margin: 0 300px;
+    text-align: center;
+    line-height: 0;
+}
+
+nav {
+    display: flex;
+
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    margin: 50px 200px;
+    top: 550px;
+    left: auto;
+    font-size: 40px;
+    color: white;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+.btn {
+    border: 2px solid red;
+    z-index: 1;
+    display: block;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 10px 10px;
+    font-size: 28px;
+    border-radius: 10px;
+    position: relative;
+    top: 550px;
+
+    background-color: rgba(255,0,0,.3);
+    transition: background ease 0.5s;
+    cursor: pointer;
+    color: rgba(255,255,255,100);
+    border-color: #6d15a3;
+
+}
+
+.btn:hover {
+
+    background-color: rgba(255,0,0,0.5);
+}
+
+
+.who_we {
+    height: 1500px;
+    background-color: white;
+    margin: 0;
+    padding: 40px;
+}
+
+.who_we_title {
+    outline-style: none;
+    font-size: 40px;
+    text-align: center;
+}
+
+.footer {
+    height: 200px;
+    background-color: grey;
+    margin: 0;
+    padding: 40px;
+}
+
