@@ -6,7 +6,7 @@ body {
     margin: 0 0;
     background-color: #000000;
     -webkit-font-smoothing: antialiased;
-    max-width: auto;
+    width: 1800px;
 }
 
 header {
@@ -14,13 +14,17 @@ header {
     background-image: url('../img/studiobg.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center top;
     height: 1000px;
+    width: 1800px
+
 }
+
 #LOGO_animation {
     z-index: -1;
     position: absolute;
     margin: 0 auto;
-    width: 1600px;
+    width: 100%;
     height: 300px;
     background: linear-gradient(180deg, #FFFFFF, #0000FF, #FFFFFF, #0000FF, #FFFFFF, #0000FF, #FFFFFF);
     background-size: 100% 500%;
@@ -38,9 +42,11 @@ header {
 }
 
 .logo {
-    position: absolute;
-    left: 355px;
+    display: flex;
+    justify-content: center;
+    position: relative;
     top: 100px;
+    width: 100%;
 }
 
 .desc {
@@ -51,25 +57,26 @@ header {
     font-size: 60px;
     border-top: solid 1px yellow;
     border-bottom: solid 1px yellow;
-    top: 270px;
+    top: 150px;
     padding: 30px 0 45px;
-    margin: 0 300px;
+    margin: 0 200px;
     text-align: center;
     line-height: 0;
 }
 
 nav {
     display: flex;
-
+    flex-wrap: wrap;
     z-index: 1;
     position: relative;
     text-align: center;
-    margin: 50px 200px;
-    top: 550px;
+    margin: 50px 100px;
+    top: 450px;
     left: auto;
     font-size: 40px;
     color: white;
-    justify-content: space-between;
+    justify-content: space-around;
+    justify-items: center;
 }
 
 nav a {
@@ -92,7 +99,7 @@ nav a:hover {
     font-size: 28px;
     border-radius: 10px;
     position: relative;
-    top: 550px;
+    top: 460px;
 
     background-color: rgba(255,0,0,.3);
     transition: background ease 0.5s;
@@ -127,4 +134,3 @@ nav a:hover {
     margin: 0;
     padding: 40px;
 }
-
